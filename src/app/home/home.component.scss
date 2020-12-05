@@ -1,55 +1,59 @@
-
 .app-home-component {
-    width: calc( 100% - 4rem );
-    margin-left: 2rem;
+  width: calc(100% - 4rem);
+  margin-left: 2rem;
 }
 
 .tasks {
-    margin: 2rem;
-    margin-left: .5rem;
-    font-size: .90rem;
-    color: blue;
+  margin: 2rem;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: blue;
 }
 
 .nations {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  .nation-div {
+    margin-right: 12px;
+  }
+  .nation:hover {
+    background-color: green;
+  }
+  .nation {
+    width: 128px;
+    height: 128px;
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid lightgray;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+
+  .image {
+    //width: calc(128px - 1rem);
+    //height: 72px;
+    //margin-left: 0.25rem;
+    //overflow: hidden;
+    //object-fit: cover;
+    //border: 1px solid black;
+    border: 0;
     width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    .nation-div {
-        margin-right: 12px;
-    }
-    .nation {
-        width: 128px;
-        height: 128px;
-        border-radius: 4px;
-        background-color: white;
-        border: 2px solid lightgray;
-        background-color: #F0F0F0;
-        cursor: pointer;
-    }
-
-    .image {
-        width: calc( 128px - 1rem );
-        height: 72px;
-        margin-left: .25rem;
-        overflow: hidden;
-        object-fit: cover;
-        border: 1px solid black;
-    }
+  }
 }
 
 .hilite {
-    font-weight: bold;
-    color: darkgray;
-    margin-top: 1rem;
+  font-weight: bold;
+  color: darkgray;
+  margin-top: 1rem;
 }
 
 .active {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .info {
-    width: 100%;
-    border: 1px dashed lightgray;
+  width: 100%;
+  border: 1px dashed lightgray;
 }

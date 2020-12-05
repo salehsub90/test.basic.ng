@@ -10,8 +10,8 @@
         <div>- add any cool features u can think of</div>
     </div>
     <div fxLayout="row" fxLayoutAlign="start center" class="nations">
-        <div *ngFor="let nation of nations" class="nation-div">
-            <div fxLayout="column" (mouseover)="hilite(nation)" class="nation">
+        <div *ngFor="let nation of nations" class="row">
+            <div fxLayout="column" (click)="onClick(nation)" (mouseover)="hilite(nation)" class="nation">
                 <div>{{nation.alpha3Code}}</div>
                 <img [src]="nation.flag" alt="" draggable="false" class="image">
             </div>
@@ -22,11 +22,11 @@
     </div>
     <div fxLayout="row" fxLayoutAlign="space-between start" class=info>
         <div class="active">
-            <div>name:</div>
-            <div>native name:</div>
-            <div>capital:</div>
-            <div>latitude:</div>
-            <div>longitude:</div>
+            <div>name: {{name}}</div>
+            <div>native name: {{nativeName}}</div>
+            <div>capital: {{capital}}</div>
+            <div>latitude: {{latitude}}</div>
+            <div>longitude: {{longitude}}</div>
         </div>
         <div>
             <img #flag style="border:1px dashed blue;width:320px;height:240px;">
