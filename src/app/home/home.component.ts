@@ -37,6 +37,8 @@ export class HomeComponent implements OnInit,OnDestroy
         this.changeDetectorRef.detectChanges();
         
         console.log("clicked");
+        console.log(this.nations.length);
+        return this.nations.length;
     }
 
     onClick( nation:Nation) {
@@ -46,7 +48,8 @@ export class HomeComponent implements OnInit,OnDestroy
       this.latitude = nation.latlng[0];
       this.longitude = nation.latlng[1];
       
-      
+      console.log(this.nations.length);
+
 
       console.log(nation);
       console.log("cliccccckkked");

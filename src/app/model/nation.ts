@@ -9,4 +9,5 @@ export interface Nation
     flag: string;
     latitude: number;
     longitude: number;
+    latlng: number;
 }
